@@ -1,0 +1,182 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <conio.h>
+#include <windows.h>
+
+using namespace std;
+
+int main()
+{
+	int i, nilai, benar=0, salah=0;
+	string user, pass;
+	char pilihanlogin, pilihan, jawab, pilih;
+	ulang :
+	cout<<"\t\t\t\t    =================================\n";
+	cout<<"\t\t\t     =============================================\n";
+	cout<<"\t\t\t\t\t    SELAMAT DATANG\n";
+	cout<<"\t\t\t\t\t\tDI QUIS\n";
+	cout<<"\t\t\t\t  SEBERAPA TAU KAMU TENTANG COIVD-19 \n";
+	cout<<"\t\t\t     =============================================\n";
+	cout<<"\t\t\t\t    =================================\n";
+	cout<<"                                                !Login!\n";
+	cout<<"\t\t\t\t\t\t\t\t\t\n";
+	cout<<"\t\t\t\t\tUssername : ";cin>>user;cout<<"\n";
+	cout<<"\t\t\t\t\tPassword  : ";cin>>pass;cout<<"\t\t\n";
+			if (user == "indra" && pass == "indra")
+			{
+				cout<<"\t\t\t Login Berhasil\t\t\n";
+			}
+			else
+			{
+				cout<<"\t\t\t\t   Ussername dan Password Anda Salah\t\t\n";
+				cout<<"\t\t\t\t   Coba lagi ?[Y/T]  : ";cin>>pilihanlogin;cout<<"\t\t\n";
+					if (pilihanlogin=='y' || pilihanlogin=='Y')
+					{system("cls");
+					goto ulang;}
+					else{goto selesai;}
+					if (pilihanlogin=='t' || pilihanlogin=='T')
+					{goto selesai;}
+			}
+
+
+	cout<<"\t\t-------------------------------------------------------------------------\n";
+	system("cls");
+	{
+    ulangjwb :
+	cout<<"PILIH SALAH SATU JAWABAN YANG MENURUT ANDA BENAR, ANTARA A, B, C, ATAU D!\n";
+	cout<<"=========================================================================\n";
+	cout<<"1. Apakah vaksin dari COVID-19 sudah tersedia dimasyarakat??\n";
+	string pilgan1[50]={"a. Iya ","b. Belum (Dalam pengembangan)","c. Tidak","d. Belum diketahui"};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan1[i]<<"\n";}
+    cout<<"Jawaban Anda : ";
+    cin >> jawab;
+        if(jawab == 'b' || jawab == 'B')
+        {benar++;}
+        else{
+        salah++;}
+    cout<<"==========================================================================\n";
+    cout<<"2. Berapa jarak minumum social distancing ??\n";
+    string pilgan2[50]={"a. 1 Cm","b. 1 Mil","c. 1 Km ","d. 1 Meter"};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan2[i]<<"\n";}
+    cout<<"Jawaban Anda : ";
+    cin >> jawab;
+        if(jawab == 'd' || jawab == 'D')
+        {benar++;}
+        else{
+        salah++;}
+    cout<<"==========================================================================\n";
+	cout<<"3. Sampai saat ini negara manakah yang memiliki jumlah terinfeksi terbanyak??\n";
+	string pilgan3[50]={"a. Singapura","b. Italia","c. Amerika","d. India"};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan3[i]<<"\n";}
+    cout<<"Jawaban Anda : ";
+    cin >> jawab;
+        if(jawab == 'c' || jawab == 'C')
+        {benar++;}
+        else{
+        salah++;}
+	cout<<"==========================================================================\n";
+	cout<<"4. Berikut ini cara memutus tali Penyebaran covid-19, kecuali ??\n";
+	string pilgan4[50]={"a. Mengajak teman nonton konser","b. Diam dirumah","c. social distancing","d. Menggunakan masker jika berpergian "};
+    for (i=0;i<=3;i++)
+	{cout<<pilgan4[i]<<"\n";}
+	cout<<"Jawaban Anda : ";
+    cin >> jawab;
+        if(jawab == 'a' || jawab == 'A')
+        {benar++;}
+        else{
+        salah++;}
+    cout<<"==========================================================================\n";
+    cout<<"5. Apa penyebab utama penyebaran covid-19??\n";
+    string pilgan5[50]={"a. Rendahnya kesadaran masyarakat","b. Pola hidup bersih","c. Berolahraga dari rumah","d. Tiduran"};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan5[i]<<"\n";}
+    cout<<"Jawaban Anda : ";
+    cin >> jawab;
+            if(jawab == 'a' || jawab == 'A')
+        {benar++;}
+        else{
+        salah++;}
+	cout<<"==========================================================================\n";
+	cout<<"6. Berikut ini gejala-gejala yang di alami orang yang terkena covid-19, kecuali??\n";
+	string pilgan6[50]={"a. Batuk dahak","b. Keseleo","c. Demam tinggi","d. Pusing"};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan6[i]<<"\n";}
+	cout<<"Jawaban Anda : ";
+    cin >> jawab;
+        if(jawab == 'b' || jawab == 'B')
+        {benar++;}
+        else{
+        salah++;}
+	cout<<"==========================================================================\n";
+	cout<<"7. Apakah orang sehat juga harus menggunakan masker saat berpergian??\n";
+	string pilgan7[50]={"a. Tidak ","b. Bisa jadi","c. Iya","d  Sangat tidak perlu (Covid-19 hanya virus bualan elit global :v). "};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan7[i]<<"\n";}
+    cout<<"Jawaban Anda : ";
+    cin >> jawab;
+        if(jawab == 'c' || jawab == 'C')
+        {benar++;}
+        else{
+        salah++;}
+	cout<<"==========================================================================\n";
+	cout<<"8. Jika seseorang dinyatakan ODP covid-19 maka hal yang harus dilakukan adalah??\n";
+	string pilgan8[50]={"a. Mengkarantina diri selama 14 hari","b. Traveling antar negara","c. Bukber dengan teman SMA","d. Reuni dengan teman TK"};
+    for (i=0;i<=3;i++)
+	{cout<<pilgan8[i]<<"\n";}
+	cout<<"Jawaban Anda : ";
+    cin >> jawab;
+            if(jawab == 'a' || jawab == 'A')
+        {benar++;}
+        else{
+        salah++;}
+	cout<<"==========================================================================\n";
+	cout<<"9. Di Indonesia daerah manakah yang paling kebal covid-19??\n";
+	string pilgan9[50]={"a. Jakarta","b. Riau","c. Lombok","d. Tidak ada"};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan9[i]<<"\n";}
+	cout<<"Jawaban Anda : ";
+    cin >> jawab;
+            if(jawab == 'd' || jawab == 'D')
+        {benar++;}
+        else{
+        salah++;}
+	cout<<"==========================================================================\n";
+	cout<<"10. Hand sanitizer dengan kadar 60% alkohol digunakan sebagai ??\n";
+	string pilgan10[50]={"a. Pemberih tangan","b. Skincare","c. Sirup","d. Sabun"};
+	for (i=0;i<=3;i++)
+	{cout<<pilgan10[i]<<"\n";}
+	cout<<"Jawaban Anda : ";
+    cin >> jawab;
+            if(jawab == 'a' || jawab == 'A')
+        {benar++;}
+        else{
+        salah++;}
+
+	cout<<"\nApakah anda yakin dengan jawaban anda??[Y/T]\n";cin>>pilihan;cout<<"\n";
+					if (pilihan=='y' || pilihan=='Y')
+					{goto nilai;}
+
+					if (pilihan=='t' || pilihan=='T')
+					{system("cls");
+					goto ulangjwb;
+					cout<<endl;}
+
+	}		nilai :
+                    cout<<"       ======================================\n";
+					cout<<"=====================================================\n";
+					cout<<"\t\t   Perolehan Nilai"<<endl;
+            		nilai = benar*10;
+            		cout<<"    Jumlah Benar : "<<benar<<" soal "<<endl;
+            		cout<<"    Jumlah Salah : "<<salah<<" soal "<<endl;
+            		cout<<"    Nilai Anda   : "<<nilai<<"\n"<<endl;
+					cout<<"=====================================================\n";
+					cout<<"       ======================================\n";
+			selesai :
+			cout<<"\t     ==========================="<<endl;
+			cout<<"\t     Quis selesai, Terimakasi\n";
+			cout<<"\t     ==========================="<<endl;
+}
